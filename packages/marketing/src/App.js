@@ -6,11 +6,11 @@ import Landing from "./components/Landing"
 import Pricing from "./components/Pricing"
 
 const generateClassName = createGenerateClassName({
-    productionPrefix: "mas"
+    productionPrefix: "ma"
 })
 
 export default () => {
-    return (<div>
+    return (
         <StylesProvider generateClassName={generateClassName}>
             <BrowserRouter>
                 <Switch>
@@ -19,5 +19,5 @@ export default () => {
                 </Switch>
             </BrowserRouter>
         </StylesProvider>
-    </div>)
+    )
 }
